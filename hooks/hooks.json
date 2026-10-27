@@ -1,0 +1,6 @@
+{
+  "description": "Local output reduction, duplicate context detection and session guard. No external telemetry.",
+  "modules": [
+    "./register.js"
+  ]
+}

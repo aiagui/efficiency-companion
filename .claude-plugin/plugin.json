@@ -1,0 +1,111 @@
+{
+  "name": "efficiency-companion",
+  "version": "1.4.0",
+  "description": "A small helper above the typing box: context bar, model, working agents, efficiency tips, and shorter command output with recoverable originals.",
+  "author": {
+    "name": "Aitor Aguilar"
+  },
+  "license": "MIT",
+  "userConfig": {
+    "enabled": {
+      "type": "boolean",
+      "title": "Turn on",
+      "description": "Turn the whole helper on or off.",
+      "default": true
+    },
+    "mode": {
+      "type": "string",
+      "title": "Mode",
+      "description": "apply shortens long command output. observe only measures it and changes nothing.",
+      "default": "apply",
+      "options": [
+        "apply",
+        "observe"
+      ]
+    },
+    "redactSecrets": {
+      "type": "boolean",
+      "title": "Hide secrets",
+      "description": "Mask likely passwords and keys in command output.",
+      "default": false
+    },
+    "minBytes": {
+      "type": "number",
+      "title": "Shorten from (bytes)",
+      "description": "Only shorten output longer than this many bytes.",
+      "default": 2048
+    },
+    "contextPercent": {
+      "type": "number",
+      "title": "Long chat warning (%)",
+      "description": "Suggest a fresh chat when the chat is this full.",
+      "default": 75
+    },
+    "maxTurns": {
+      "type": "number",
+      "title": "Long chat warning (messages)",
+      "description": "Suggest a fresh chat after this many of your messages.",
+      "default": 30
+    },
+    "duplicateThreshold": {
+      "type": "number",
+      "title": "Repeated reads warning",
+      "description": "Warn after this many repeated reads of the same file.",
+      "default": 3
+    },
+    "maxCacheEntries": {
+      "type": "number",
+      "title": "Read memory size",
+      "description": "How many recent file reads to remember for spotting repeats.",
+      "default": 256
+    },
+    "archiveBudgetBytes": {
+      "type": "number",
+      "title": "Original storage (bytes)",
+      "description": "How much space to use for keeping full originals of shortened output.",
+      "default": 2000000
+    },
+    "diffContextReduction": {
+      "type": "boolean",
+      "title": "Shorten git diffs",
+      "description": "Also shorten unchanged lines in git diffs. Changed lines are always kept.",
+      "default": false
+    },
+    "telemetry": {
+      "type": "boolean",
+      "title": "Keep local stats",
+      "description": "Keep simple savings counts on this computer. Nothing is sent anywhere.",
+      "default": true
+    },
+    "animateCompanion": {
+      "type": "boolean",
+      "title": "Animate the helper",
+      "description": "Let the helper breathe, blink and react. Reduce Motion always turns it off.",
+      "default": true
+    },
+    "tips": {
+      "type": "boolean",
+      "title": "Efficiency tips",
+      "description": "Show short tips about model choice and effort level above the typing box.",
+      "default": true
+    },
+    "skin": {
+      "type": "string",
+      "title": "Helper colour",
+      "description": "Colour of the helper above the typing box.",
+      "default": "orange",
+      "options": [
+        "orange",
+        "blue",
+        "green",
+        "purple"
+      ]
+    }
+  },
+  "keywords": [
+    "efficiency",
+    "context",
+    "tokens",
+    "claude-code"
+  ]
+}

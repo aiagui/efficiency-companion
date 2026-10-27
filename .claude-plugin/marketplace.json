@@ -1,0 +1,17 @@
+{
+  "name": "efficiency-companion",
+  "owner": {
+    "name": "Aitor Aguilar"
+  },
+  "plugins": [
+    {
+      "name": "efficiency-companion",
+      "source": "./",
+      "description": "A small helper above the typing box: context bar, model, working agents, efficiency tips, and shorter command output with recoverable originals.",
+      "version": "1.4.0"
+    }
+  ],
+  "metadata": {
+    "description": "Efficiency Companion for Claude Code"
+  }
+}

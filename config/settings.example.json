@@ -1,0 +1,22 @@
+{
+  "pluginConfigs": {
+    "efficiency-companion": {
+      "options": {
+        "enabled": true,
+        "mode": "apply",
+        "redactSecrets": false,
+        "minBytes": 2048,
+        "contextPercent": 75,
+        "maxTurns": 30,
+        "duplicateThreshold": 3,
+        "maxCacheEntries": 256,
+        "archiveBudgetBytes": 2000000,
+        "diffContextReduction": false,
+        "telemetry": true,
+        "animateCompanion": true,
+        "tips": true,
+        "skin": "orange"
+      }
+    }
+  }
+}
